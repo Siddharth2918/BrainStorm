@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #404258;
+}
+
+.heading {
+    color: #FCE700;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+}
+#button-main {
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+}
+#btn2{
+    height: 10%;
+    width: 50%;
+    background-color: transparent;
+    border-color: #FCE700;
+    padding: 1%;
+    margin: 2%;
+    color: #FCE700;
+}
+#btn2:hover{
+    background-color: #FCE700;
+    color: black;
+}
+
+.base-buttons {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: #000000;
+    bottom: 7%;
+}
+.mainlogo{
+    position: absolute;
+    left: 20%;
+}
+.img2{
+    position: relative;
+    left: 17%;
+}
+.signup-box{
+    position: absolute;
+    background-color: #000000;
+    padding: 20px;
+    width: 24%;
+    right: 10%;
+    top: 15%;
+    border-radius: 5%;
+}
+h2{
+    color: aliceblue;
+    font-size: 25px;
+}
+#text-field{
+    width: 80%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}'s user window</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style2.css">
+</head>
+
+<body class="bg">
+    <form action="/form_navbar" method="post" class="navbar">
+        <input type="submit" value="Home" name="navi" class="nav-btn">
+        <input type="submit" value="Predict" name="navi" class="nav-btn">
+        <input type="submit" value="Profile" name="navi" class="nav-btn">
+        <input type="submit" value="Graphs" name="navi" class="nav-btn">
+        <input type="submit" value="ProbablityAnalysis" name="navi" class="nav-btn">
+    </form>
+    <h1 class="head">Welcome {{ name }} !</h1>
+    <div class="data">
+        <table class="table table-dark table-striped tab">
+            <tr>
+                <th class="col">Date</th>
+                <th class="col">Age</th>
+                <th class="col">Prediction</th>
+            </tr>
+            {% for i in past_data %}
+            <tr>
+                {% for j in i %}
+                <td>{{ j }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <form action="/form_prediction_page" , method="post">
+        <input type="submit" value="Get another prediction!" value="pred" name="pred" class="btn">
+    </form>
+
+</body>
+
+</html>
